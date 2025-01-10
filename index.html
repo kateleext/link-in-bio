@@ -6,7 +6,7 @@
   <body>
     <div class = "main-container">
       <div class = "image-row">
-        <img src = "media/profile_icon.jpeg">
+        <img class = "profile-icon" src = "media/profile_icon.jpeg" alt = "kate's profile image">
       </div>
       <div class = "name-row">
         kateleext
@@ -34,8 +34,63 @@
    
   </body>
   <style>
-    * {
-      border: 1px red dashed;
+
+    body {
+      padding: 50px;
+      background-color: black;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .main-container {
+      background-color: white;
+      border-radius: 20px;
+      padding: 50px;
+    }
+
+    .image-row {
+    }
+
+    .name-row {
+      font-size: 30px;
+      margin-top: 20px;
+    }
+
+    .social-icons-row {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .links-collection {
+      width: auto;
+    }
+
+    .links-item {
+      margin-top: 20px;
+      border: 1px green solid;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .profile-icon {
+      width: 128px;
+      height: 128px;
+      object-fit: cover;
+      border-radius: 128px;
+      border: 2px green solid;
+    }
+
+    .thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 48px;
+      object-fit: cover;
+      margin-right: 20px
     }
   </style>
 </html>
