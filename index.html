@@ -3,14 +3,17 @@
   <head>
     <meta charset = "UTF-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class = "main-container">
       <div class = "image-row">
-        <img class = "profile-icon" src = "media/profile_icon.jpeg" alt = "kate's profile image">
+        <img class = "profile-icon" src = "media/profile_icon.png" alt = "kate's profile image">
       </div>
       <div class = "name-row">
-        this is kate
+        this is kate.
       </div>
       <div class = "social-icons-row">
         <a target="_blank" href="https://instagram.com/kateleext" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
@@ -20,15 +23,15 @@
       <div class = "links-collection">
         <div class = "links-item">
           <img class = "thumbnail" src = "media/thumbnails/piano.jpg">
-          <a target = "_blank" href = "https://www.youtube.com/@KateLeePiano"> i grew up playing the piano </a>
+          <a class = "links-text" target = "_blank" href = "https://www.youtube.com/@KateLeePiano"> piano videos from the old days </a>
         </div>
         <div class = "links-item">
           <img class = "thumbnail" src = "media/thumbnails/kaos.png">
-          <a target = "_blank" href = "https://www.kaos.earth/"> my environmentalist thoughts </a>
+          <a class = "links-text" target = "_blank" href = "https://www.kaos.earth/"> my environmentalist thoughts </a>
         </div>
         <div class = "links-item">
           <img class = "thumbnail" src = "media/thumbnails/beyonce.png">
-          <a target = "_blank" href = "https://www.beyonce.com"> i love beyonce </a>
+          <a class = "links-text" target = "_blank" href = "https://www.youtube.com/watch?v=N7U7AIKR4fo"> my favorite beyonce performance </a>
         </div>
       </div>
     </div>
@@ -36,21 +39,28 @@
   </body>
   <style>
 
+    html {
+      min-height: 100%;
+    }
+
     body {
+      min-height: 100%;
       padding-top: 50px;
       padding-bottom: 50px;
-      background-color: black;
+      background: linear-gradient(90deg, #003f5b, #004874, #00508e, #0057a9, #005cc2, #325fda, #5c60ee, #855cff);
       text-align: center;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'poppins';
     }
 
     a {
       text-decoration: none;
-      color: green;
+      color: #003f5b;
     }
 
     .main-container {
-      background-color: white;
+      background-color: rgba(255,255,255,0.7);
+      backdrop-filter: blur(50px);
+      box-shadow: 0px 0px 10px 4px #003f5b;
       border-radius: 20px;
       padding: 50px;
       margin: auto;
@@ -61,8 +71,10 @@
     }
 
     .name-row {
-      font-size: 30px;
+      font-size: 55px;
       margin-top: 20px;
+      font-family: "Jersey 15";
+      color: #003f5b;
     }
 
     .social-icons-row {
@@ -81,12 +93,17 @@
 
     .links-item {
       margin-top: 20px;
-      border: 1px green solid;
-      border-radius: 10px;
+      background-color: white;
+      border-radius: 300px;
       padding: 10px;
       display: flex;
       justify-content: flex-start;
-      align-items: center;
+      align-items: center;  
+      text-align: left;  
+    }
+
+    .links-text {
+      padding-right: 10px;
     }
 
     .profile-icon {
@@ -94,7 +111,7 @@
       height: 128px;
       object-fit: cover;
       border-radius: 128px;
-      border: 2px green solid;
+      border: 2px #003f5b solid;
     }
 
     .thumbnail {
